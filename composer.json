@@ -18,7 +18,6 @@
   "require": {
     "php": "^7.2",
     "roave/security-advisories": "dev-master",
-    "event-engine/php-engine": "^0.1.1",
     "event-engine/php-messaging": "dev-master",
     "event-engine/php-engine-utils": "dev-master",
     "psr/log": "^1.1"
