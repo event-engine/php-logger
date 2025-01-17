@@ -105,7 +105,7 @@ class SimpleMessageEngine implements LogEngine
         $this->logger->info("Loaded aggregate state of type $aggregateType with id $aggregateId and version $aggregateVersion");
     }
 
-    public function aggregateStateLoadedFromCache(string $aggregateType, string $aggregateId, int $expectedVersion = null)
+    public function aggregateStateLoadedFromCache(string $aggregateType, string $aggregateId, ?int $expectedVersion = null)
     {
         $expectedVersionStr = $expectedVersion !== null ? " expected version $expectedVersion" : "";
         $this->logger->info("Loaded aggregate state of type $aggregateType with id $aggregateId {$expectedVersionStr} from cache");

@@ -52,7 +52,7 @@ interface LogEngine
 
     public function aggregateStateLoaded(string $aggregateType, string $aggregateId, int $aggregateVersion);
 
-    public function aggregateStateLoadedFromCache(string $aggregateType, string $aggregateId, int $expectedVersion = null);
+    public function aggregateStateLoadedFromCache(string $aggregateType, string $aggregateId, ?int $expectedVersion = null);
 
     public function projectionHandledEvent(string $projectionName, GenericEvent $event);
 
